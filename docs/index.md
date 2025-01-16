@@ -1,5 +1,5 @@
 ---
-title: Welcome to team 201's page.
+title: **Welcome to Team 201's page.**
 tags:
 - tag1
 - tag2
@@ -7,12 +7,12 @@ tags:
 
 ## Team 201: Monkey Fitbit
 
-This is text **but bold now**: lit.
+**Team Members:**
 
-- Et ducimus
-- Prosecta hinc nix vidi rettulit cum sitim
-- Has in tonitribus tenebrae Romane mirantum resupina
-- Figuras et dextram
+- JC Reed
+- Bradley Pollock
+- Eric ____last Name here
+- RIP MARKUS
 
 ## Esse quoque sedem plena nunc iecur
 
