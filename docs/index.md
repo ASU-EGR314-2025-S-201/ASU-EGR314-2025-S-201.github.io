@@ -1,5 +1,5 @@
 ---
-title: Welcome to team 201's page
+title: Welcome to team 201's page.
 tags:
 - tag1
 - tag2
