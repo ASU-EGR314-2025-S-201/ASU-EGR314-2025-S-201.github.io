@@ -7,8 +7,7 @@ tags:
 
 ## Team 201: Monkey Fitbit
 
-Lorem markdownum gradus, qui largis, nec pater pleno: fatum. Adspexit cursus
-cur, aut in adhuc crimina **habebat**: pro.
+This is text **but bold now**: lit.
 
 - Et ducimus
 - Prosecta hinc nix vidi rettulit cum sitim
