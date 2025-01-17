@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://embedded-systems-design.github.io/template_report/Appendix/</loc>
+         <lastmod>2025-01-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://embedded-systems-design.github.io/template_report/TeamOrganization/</loc>
          <lastmod>2025-01-17</lastmod>
          <changefreq>daily</changefreq>
