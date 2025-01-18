@@ -39,3 +39,13 @@ We will use text messages to remind the group of the meeting the day prior. If m
 | Marcus Perez | Progress Monitor |
 | Bradley Pollock | Recorder |
 | JC Reed | Team Lead |
+
+## Team Coordination and Accountability
+Discuss, decide upon, and answer how you will:
+
+1. Ensure that assignments are submitted before deadlines and each team member has "signed off" on each submitted assignment?
+  * We will communicate with each other to ensure that we have not missed anything in the assignment and will meet in person if need be when we have to work on it as a group effort.
+2. Ensure that each team member has the knowledge and skill required for each assignment, and how you will adjust if not?
+  * We will work with what our individual strengths are and if one person is strugglilng with their part of the group, they should notify early on that they cannot do thier part and need help. Then we should lend a hand to help that person get some experience with that problem and help them solve it along the way.
+3. Ensure that feedback from your design review is distributed to and acted on by every member of the team?
+  * We will likely meetup if we receive feedback from the professor and together ask for clarification for what feedback we received in person or anytime that we are all available. If we're not all available we have the responsibility of emailing the professor about the feedback with one member and that member should contact the group with updates based on the feedback.
