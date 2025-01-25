@@ -7,9 +7,16 @@
 * (Answer)
 
 ## Generate Ideas
+### Step 1
+
+### Step 2
+
+### Step 3
 
 ## Sort, Rank, and Group
 
 ## Concept Sketch
+(Photo Link)
 
-
+## Presentation
+Video: (Video Link)
