@@ -1,5 +1,3 @@
-## Background Reading
-
 ## Learn about Science Exhibits
 1. What is the goal of your Exhibit?
 * (Answer)
@@ -16,6 +14,7 @@
 
 ## Concept Sketch
 (Photo Link)
+(1 Page Essay Describing Questions from Microsoft Word, doable with pdf format)
 
 ## Presentation
 Video: (Video Link)
