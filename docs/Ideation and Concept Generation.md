@@ -14,7 +14,18 @@
 
 ## Concept Sketch
 (Photo Link)
+
 (1 Page Essay Describing Questions from Microsoft Word, doable with pdf format)
+
+### Justification
+1. What kinds of cues will you provide to make the use of your device easier?
+* (Answer)
+2. How do you plan on designing your "controls" (see page 4 and 6 of the pdf for "Suggested Guidelines for Designing Interactive Exhibits")
+* (Answer)
+3. What role will durability, safety, and comfort play in the user experience?
+* (Answer)
+4. What kind of instruction will be needed to use the device? (see page 5 of the pdf for "Suggested Guidelines for Designing Interactive Exhibits")
+* (Answer)
 
 ## Presentation
 Video: (Video Link)
