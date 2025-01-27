@@ -1,8 +1,10 @@
 ## **Learn about Science Exhibits**
-1. What is the goal of your Exhibit?
-(Answer)
-2. Who is your audience?
-(Answer)
+
+**1. Exhibit Goals**
+Our exhibit will help visitors compare different elements on the periodic table. This will be accomplished by demonstrating and allowing visitors to attempt the sorting of different elements on the periodic table (represented by small, colored spheres) into associated matching categories. Users will compare different elements and discover the basic differences between atomic categories of metals, metalloids, and nonmetals. Visitor input and the resulting accuracy (or error) in their sorting will be displayed on a small display screen.
+
+**2. Who is your audience?**
+The exhibit's intended audience is middle school students. We plan to make the device more accessible by using larger buttons of contrasting colors, and by placing the buttons within easy reach of all users. Middle school students are just beginning to scratch the surface of basic chemistry, and the exhibit will help introduce them to an important related concept. The device can also serve as a reminder of this concept to more experienced users, and serves as an enjoyable color-sorting game for younger students.
 
 ## **Generate Ideas, Ranking, and Sorting**
 ### Step 1 - Brainstorming
