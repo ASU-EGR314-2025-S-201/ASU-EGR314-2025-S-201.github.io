@@ -20,13 +20,13 @@
 
 ### *Justification*
 1. What kinds of cues will you provide to make the use of your device easier?
-   * One cue we plan to use with our device is color coordination and seperation which involve seperating three choices based on colors in order to teach elements within the periodic table as either being metallic, nonmetals, and metalloids. Another cue we plan to use would be the implementation of an autonomous selection system based on colors to help organize the color seperation without any inteference of the device.
-2. How do you plan on designing your "controls" (see page 4 and 6 of the pdf for "Suggested Guidelines for Designing Interactive Exhibits")
-   * (Answer)
-3. What role will durability, safety, and comfort play in the user experience?
-   * We plan to make a durable, evenly spaced, 3D printed plastic device in order for it to last during the exhibit and place it on a flat wide surface to prevent any tipping or dropping from the exhibit table. We plan for our device to handle autonomously for safety reasons to prevent any human interruption from possible hazards like solenoids and motors while the device is running. For comfort, we intend to use a control system which would be easy to operate with dsimple input commands to operate our device from a computer interface.
-4. What kind of instruction will be needed to use the device? (see page 5 of the pdf for "Suggested Guidelines for Designing Interactive Exhibits")
-   * We plan for the device to remain autonomous in its operation, but we will need to have instructions for the human-device interface where the user can ask for certain criterias for what they want from the device such as a metal, nonmetal, or metalloid.
+   - One cue we plan to use with our device is color coordination and seperation which involve seperating three choices based on colors in order to teach elements within the periodic table as either being metallic, nonmetals, and metalloids. Another cue we plan to use would be the implementation of an autonomous selection system based on colors to help organize the color seperation without any inteference of the device.
+3. How do you plan on designing your "controls" (see page 4 and 6 of the pdf for "Suggested Guidelines for Designing Interactive Exhibits")
+   - (Answer)
+5. What role will durability, safety, and comfort play in the user experience?
+   - We plan to make a durable, evenly spaced, 3D printed plastic device in order for it to last during the exhibit and place it on a flat wide surface to prevent any tipping or dropping from the exhibit table. We plan for our device to handle autonomously for safety reasons to prevent any human interruption from possible hazards like solenoids and motors while the device is running. For comfort, we intend to use a control system which would be easy to operate with dsimple input commands to operate our device from a computer interface.
+7. What kind of instruction will be needed to use the device? (see page 5 of the pdf for "Suggested Guidelines for Designing Interactive Exhibits")
+   - We plan for the device to remain autonomous in its operation, but we will need to have instructions for the human-device interface where the user can ask for certain criterias for what they want from the device such as a metal, nonmetal, or metalloid.
 
 ## **Presentation**
 Video: (Video Link)
