@@ -20,16 +20,20 @@
 
 ### *Justification*
 1. What kinds of cues will you provide to make the use of your device easier?
-* One cue we plan to use with our device is color coordination and seperation which involve seperating three choices based on colors in order to teach elements within the periodic table as either being metallic, nonmetals, and metalloids. Another cue we plan to use would be the implementation of an autonomous selection system based on colors to help organize the color seperation without any inteference of the device.
+
+   * One cue we plan to use with our device is color coordination and seperation which involve seperating three choices based on colors in order to teach elements within the periodic table as either being metallic, nonmetals, and metalloids. Another cue we plan to use would be the implementation of an autonomous selection system based on colors to help organize the color seperation without any inteference of the device.
 
 2. How do you plan on designing your "controls"
-* (Answer)
+
+   * We plan on a three way control scheme with three buttons to help us gain different results based on the three categories we chose for this device. The user will hit one of these buttons to choose between the three items of a metal, nonmetal, or metalloid to be delivered from the funnel system based on its color scheme of red, blue, or green.
 
 3. What role will durability, safety, and comfort play in the user experience?
-* We plan to make a durable, evenly spaced, 3D printed plastic device in order for it to last during the exhibit and place it on a flat wide surface to prevent any tipping or dropping from the exhibit table. We plan for our device to handle autonomously for safety reasons to prevent any human interruption from possible hazards like solenoids and motors while the device is running. For comfort, we intend to use a control system which would be easy to operate with dsimple input commands to operate our device from a computer interface.
+
+   * We plan to make a durable, evenly spaced, 3D printed plastic device in order for it to last during the exhibit and place it on a flat wide surface to prevent any tipping or dropping from the exhibit table. We plan for our device to handle autonomously for safety reasons to prevent any human interruption from possible hazards like solenoids and motors while the device is running. For comfort, we intend to use a control system which would be easy to operate with dsimple input commands to operate our device from a computer interface.
 
 4. What kind of instruction will be needed to use the device?
-* We plan for the device to remain autonomous in its operation, but we will need to have instructions for the human-device interface where the user can ask for certain criterias for what they want from the device such as a metal, nonmetal, or metalloid.
+
+   * We plan for the device to remain autonomous in its operation, but we will need to have instructions for the human-device interface where the user can ask for certain criterias for what they want from the device such as a metal, nonmetal, or metalloid. For out interface, we plan to have to elaborate the operation of the buttons and what they stand for, depending on what the user wants to learn about with the three categories.
 
 ## **Presentation**
 Video: (Video Link)
