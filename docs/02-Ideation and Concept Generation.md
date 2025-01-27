@@ -36,5 +36,4 @@ We plan to make a durable, evenly spaced, 3D printed plastic device in order for
 We plan for the device to remain autonomous in its operation, but we will need to have instructions for the human-device interface where the user can ask for certain criterias for what they want from the device such as a metal, nonmetal, or metalloid. For out interface, we plan to have to elaborate the operation of the buttons and what they stand for, depending on what the user wants to learn about with the three categories.
 
 ## **Presentation**
-
-[![Team 201 - Design Ideation & Concept Generation Presentation](https://github.com/user-attachments/assets/e575e6e4-5bcf-4b39-b335-4c4590526897)](https://youtu.be/ltuETTJ3BVs)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ltuETTJ3BVs?si=oKO1mZElFKwaTg1G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
