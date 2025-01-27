@@ -13,7 +13,8 @@
 ![Step 3](https://github.com/user-attachments/assets/d42d9f68-32b2-47f7-acd0-6f5cfbc50009)
 
 ## **Concept Sketch**
-(Photo Link)
+![Concept Sketch](https://github.com/user-attachments/assets/9a7c295e-f392-4541-83b7-5fb4fb4028d7)
+
 
 (1 Page Essay Describing Questions from Microsoft Word, doable with pdf format)
 
