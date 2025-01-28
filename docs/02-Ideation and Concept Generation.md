@@ -24,11 +24,16 @@ The exhibit's intended audience is middle school students. We plan to make the d
 Museum visitors, especially middle school students, need inspiration to increase their enthusiasm for STEM concepts. Museum exhibits are in a unique position to increase young students’ enthusiasm in science concepts with captivating and involved exhibits. Middle school students, though more developed than those between Kindergarten and the fifth grade, have limited attention span, necessitating an exhibit that is both involving and quick to the point. To satisfy this short attention span and to provide an engaging display that teaches basic chemistry concepts, our exhibit will feature bright colors and mobile mechanisms. The device will be themed around the sorting of elements from the periodic table (represented by colored spheres) into three different categories: metals, metalloids, and nonmetals. To provide easily accessible information, a display screen will provide succinct information (less than five words) about the most recent interaction made with the exhibit (for example, a correctly sorted element will trigger a display screen labeling the interaction as correct and providing a short graphic or fact).
 
 As per project requirements, each team member must complete one individual subsystem with communication capabilities between other members’ subsystems. Our team has elected to divide the tasks into the following categories:
+
 - **Internet-based two-way communication.** The majority of this section will be handled by Marcus.
+
 - **Human machine interface via a screen/buttons.** The majority of this section will be handled by JC.
+
 - **Sensor-based controlled response.** The majority of this section will be handled by Eric.
+
 - **Actuator response.** The majority of this section will be handled by Bradley.
 
+## **Exhibit FAQ's** 
 **1. What kinds of cues will you provide to make the use of your device easier?**
 One cue we plan to use with our device is color coordination and separation which involve separating three choices based on colors in order to teach elements within the periodic table as either being metallic, nonmetals, and metalloids. Each available color will have a correspondingly colored collection bin, which is a helpful cue in aiding users in correctly sorting the “elements”. Another similar cue will be the coloring of the user interface buttons; each button’s coloring will correspond to the color of the collection bin it corresponds to.
 
