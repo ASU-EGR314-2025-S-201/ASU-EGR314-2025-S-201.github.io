@@ -6,10 +6,12 @@ title: Team 201 - Homepage
 
 **Team Members:**
 
-- JC Reed
-- Bradley Pollock
-- Eric Mittleman
-- Marcus Perez
+| Member | Website |
+|--------|---------|
+| Brad Pollock | [bradpollock.github.io](https://bradpollock.github.io){:target=”_blank”} |
+| Eric Mittleman | [e-mittl.github.io](https://e-mittl.github.io){:target=”_blank”} |
+| JC Reed | [jcmreed.github.io](https://jcmreed.github.io){:target=”_blank”} |
+| Marcus Perez | [mpere117.github.io](https://mpere117.github.io/mpere11701.github.io){:target=”_blank”} |
 
 **Preparation Date:** January 13, 2025
 
