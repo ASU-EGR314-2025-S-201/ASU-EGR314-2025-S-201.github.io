@@ -69,8 +69,8 @@ extra:
       name: 2023 Site    
 
 nav:
- - Team 201 Home Page: 01-Index.md
- - Team Organization: 02-TeamOrganization.md
- - Ideation and Concept Creation: 03-IdeationAndConceptGeneration.md
- - Block Diagram, Process Diagram, Message Structure: 04-BlockDiagram.md
- - Appendix: Appendix.md
+ - Team 201 Home Page: '01-Index.md'
+ - Team Organization: '02-TeamOrganization.md'
+ - Ideation and Concept Creation: '03-IdeationAndConceptGeneration.md'
+ - Block Diagram, Process Diagram, Message Structure: '04-BlockDiagram.md'
+ - Appendix: 'Appendix.md'
