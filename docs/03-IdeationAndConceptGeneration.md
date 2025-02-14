@@ -1,3 +1,7 @@
+---
+title: Ideation and Concept Generation
+---
+
 ## **Learn about Science Exhibits**
 
 **1. Exhibit Goals:**

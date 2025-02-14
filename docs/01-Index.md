@@ -14,6 +14,14 @@ title: Team 201 - Homepage
 | Marcus Perez | [mpere117.github.io](https://mpere117.github.io/mpere11701.github.io){:target=”_blank”} |
 | Trung Nhat Nam Tran | [nhatnamtrungtran314.github.io](https://nhatnamtrungtran314.github.io){:target=”_blank”} |
 
+## __Our Assignments__
+
+| Assignment | Link |
+|------------|------|
+| Team Organization | [link](https://asu-egr314-2025-s-201.github.io/01-TeamOrganization/){:target="_blank"}|
+| Ideation and Concept Generation | [link](https://asu-egr314-2025-s-201.github.io/02-Ideation%20and%20Concept%20Generation/){:target="_blank"}|
+| Block Diagram, Process Diagram, and Message Structure | [link](https://asu-egr314-2025-s-201.github.io/02-Ideation%20and%20Concept%20Generation/){:target="_blank"} | 
+
 **Preparation Date:** January 13, 2025
 
 - EGR314 (13574)  -  Spring 2025
