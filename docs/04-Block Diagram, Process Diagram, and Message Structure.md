@@ -1,5 +1,5 @@
 ---
-title: Team Block Diagram
+title: Team Block Diagram, Process Diagram, and Message Structure
 ---
 
 # Team Block Diagram
