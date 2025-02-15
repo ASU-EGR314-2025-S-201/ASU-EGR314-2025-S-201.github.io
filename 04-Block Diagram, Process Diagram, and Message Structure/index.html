@@ -547,46 +547,50 @@
 <p><a class="glightbox" href="../static/Images/Team201-UMLSequenceDiagram.drawio.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../static/Images/Team201-UMLSequenceDiagram.drawio.png" /></a></p>
 <h1 id="team-message-structure"><strong>Team Message Structure</strong></h1>
 <p><em>Table 1: Message Types</em>
-| Message Type | Description |
-|---|---|
-| 1 | set actuator x param y |
-| 2 | sensor data x |
-| 3 | set stepper motor state param x |
-| 4 | User input button x pushed |
-| 5 | subsystem z error code |
-| 6 | subsystem z status code |</p>
+| Message Type | Description                     |
+| ------------ | ------------------------------- |
+| 1            | set actuator x param y          |
+| 2            | sensor data x                   |
+| 3            | set stepper motor state param x |
+| 4            | User input button x pushed      |
+| 5            | subsystem z error code          |
+| 6            | subsystem z status code         |</p>
 <p><em>Table 2: Message Type definitions</em></p>
 <p><strong>Message Type 1: set actuator x param y</strong>
 | Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
-|----|----|----|
-| 0x01 (uint16_t) | X (uint8_t) | Y (uint16_t) |</p>
+| ------------------- | ---------------- | ------------------- |
+| 0x01 (uint16_t)     | X (uint8_t)      | Y (uint16_t)        |</p>
 <p><strong>Message Type 2: sensor data RGB</strong>
 | Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4 (uint8_t) | Byte 5 (uint8_t) |
-|----|----|----|----|
-| 0x02 (uint16_t) | R (uint8_t) | G (uint8_t) | B (uint8_t) |</p>
+| ------------------- | ---------------- | ---------------- | ---------------- |
+| 0x02 (uint16_t)     | R (uint8_t)      | G (uint8_t)      | B (uint8_t)      |</p>
 <p><strong>Message Type 3: set stepper motor state param x</strong>
 | Byte 1-2 (uint16_t) | Byte 3 (uint8_t) |
-|----|----|
-| 0x03 (uint16_t) | X (uint8_t) |</p>
+| ------------------- | ---------------- |
+| 0x03 (uint16_t)     | X (uint8_t)      |</p>
 <p><strong>Message Type 4: User input button x pushed</strong>
 | Byte 1-2 (uint16_t) | Byte 3 (uint8) |
-|----|----|
-| 0x04 (uint16_t) | X (uint8_t) |</p>
+| ------------------- | -------------- |
+| 0x04 (uint16_t)     | X (uint8_t)    |</p>
 <p><strong>Message Type 5: subsystem z error code</strong>
 | Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4 (uint8_t) |
-|----|----|----|
-| 0x05 (uint16_t) | Z (uint8_t) | X (uint8_t) |</p>
+| ------------------- | ---------------- | ---------------- |
+| 0x05 (uint16_t)     | Z (uint8_t)      | X (uint8_t)      |</p>
 <p><strong>Message Type 6: subsystem z status code</strong>
 | Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4 (uint8_t) |
-|----|----|----|
-| 0x06 (uint16_t) | X (uint8_t) | Y (uint8_t) |</p>
-<p>Error Code Key:
-* 0: Subsystem is not receiving data
-* 1: Subsystem is unable to perform function</p>
-<p>Status Code Key:
-* 0: Subsystem is not active
-* 1: Subsystem is active
-* 2: Subsystem is performing priority task</p>
+| ------------------- | ---------------- | ---------------- |
+| 0x06 (uint16_t)     | X (uint8_t)      | Y (uint8_t)      |</p>
+<p>Error Code Key:</p>
+<ul>
+<li>0: Subsystem is not receiving data</li>
+<li>1: Subsystem is unable to perform function</li>
+</ul>
+<p>Status Code Key:</p>
+<ul>
+<li>0: Subsystem is not active</li>
+<li>1: Subsystem is active</li>
+<li>2: Subsystem is performing priority task</li>
+</ul>
 
 
 
