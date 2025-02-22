@@ -61,11 +61,11 @@ extra_javascript:
  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     
 
-copyright: "Copyright &copy; 2025 team 201"
+copyright: "Copyright &copy; 2025 Team 201"
 
 extra:
   generator: false
   social:
     - icon: fontawesome/regular/file-code
-      link: /2023_fall
-      name: 2023 Site    
+      link: /2025_fall
+      name: 2025 Site    
