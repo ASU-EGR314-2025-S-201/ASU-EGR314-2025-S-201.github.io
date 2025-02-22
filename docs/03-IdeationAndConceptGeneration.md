@@ -23,9 +23,10 @@ The exhibit's intended audience is middle school students. We plan to make the d
 ## **Concept Sketch**
 ![Concept Sketch](https://github.com/user-attachments/assets/9a7c295e-f392-4541-83b7-5fb4fb4028d7)
 
-
 ## **Exhibit Rationale and Justification**
 Museum visitors, especially middle school students, need inspiration to increase their enthusiasm for STEM concepts. Museum exhibits are in a unique position to increase young students’ enthusiasm in science concepts with captivating and involved exhibits. Middle school students, though more developed than those between Kindergarten and the fifth grade, have limited attention span, necessitating an exhibit that is both involving and quick to the point. To satisfy this short attention span and to provide an engaging display that teaches basic chemistry concepts, our exhibit will feature bright colors and mobile mechanisms. The device will be themed around the sorting of elements from the periodic table (represented by colored spheres) into three different categories: metals, metalloids, and nonmetals. To provide easily accessible information, a display screen will provide succinct information (less than five words) about the most recent interaction made with the exhibit (for example, a correctly sorted element will trigger a display screen labeling the interaction as correct and providing a short graphic or fact).
+
+> Tony's addition to the team was a fun challenge to tackle in order to keep the direction of the project stable. Fortunately, our display is easily expandable, allowing for Tony to simply add-on his individual subsytem. The subsystem of choice was another actuator responsible for ball return. Before Tony's addition, the colored spheres would have been manually returned to the hopper, however, Tony's actuator subsystem controls a 'blower-motor,' forcing the light-weight spheres through a funnel-like tube system back to the hopper via airflow.
 
 As per project requirements, each team member must complete one individual subsystem with communication capabilities between other members’ subsystems. Our team has elected to divide the tasks into the following categories:
 
@@ -35,7 +36,7 @@ As per project requirements, each team member must complete one individual subsy
 
 - **Sensor-based controlled response.** The majority of this section will be handled by Eric.
 
-- **Actuator response.** The majority of this section will be handled by Bradley.
+- **Actuator response.** The majority of this section will be handled by Bradley and Tony.
 
 ## **Exhibit FAQ's** 
 **1. What kinds of cues will you provide to make the use of your device easier?**
@@ -49,7 +50,6 @@ We plan to make a durable, 3D printed plastic device in order for it to last dur
 
 **4. What kind of instruction will be needed to use the device?**
 The device will require minimal visual instruction. User interaction with the device is limited to simple sorting using the three available buttons, and this coupled with the color coordination between the available element types, collection bin colors, and button colors leads to what should be a very obvious interaction mechanic. To supplement these visual cues, small instructional placards will be printed and displayed near each collection bin, instructing the user to press the correspondingly colored buttons as matching colored “elements” are presented to them. A text-based instructional placard could provide even further assistance.
-
 
 ## **Presentation**
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ltuETTJ3BVs?si=oKO1mZElFKwaTg1G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
