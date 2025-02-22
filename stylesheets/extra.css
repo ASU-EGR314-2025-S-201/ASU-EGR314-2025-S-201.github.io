@@ -5,7 +5,7 @@ article{
 }
 
 blockquote{
-    background: #ffc;
+    background: #FFC627;
     p,li{
         color: var(--md-typeset-color);
     }
