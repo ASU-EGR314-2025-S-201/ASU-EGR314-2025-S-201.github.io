@@ -20,14 +20,17 @@ As this team values the needs of middle school students, we strive to increase t
 | Marcus Perez | Text | Discord | Call |
 | Bradley Pollock | Text | Discord | Call |
 | JC Reed | Text | Discord | Call |
+| Trung Nhat Nam Tran (Tony) | Text | Discord | Call |
 
 _Our team will prioritize communication via text-messaging and discord calls, leaving phone calls as an emergency communication channel. Instructor correspondence will be done as a whole team's responsibility, ensuring the feedback is communicated across the entire group._
 
 ## **Meeting Schedule**
-The team will meet do work on the project at the following times: 
+The team will meet in-person to work on the project at the following times: 
 
 - Tuesdays/Thursdays from 4:15-6:00PM
 - Fridays after 4:00PM.
+
+The team will meet as needed over web-conference to handle large-scale tasks such as preparations for the design review and final project submission details.
 
 ## **Meeting Coordination**
 We will use text messages to remind the group of the meeting the day prior. If meeting times need to be changed or added, we will discuss this with the team either in person or through text messaging. The preferred method for meetings will be face-to-face (virtual meetings will be held on an as-needed basis). Important procedures that are necessary for the team would be to contact one another if someone cannot make it to the meeting and plan ahead if there is interference with these times.
@@ -39,13 +42,14 @@ We will use text messages to remind the group of the meeting the day prior. If m
 | Marcus Perez | Progress Monitor |
 | Bradley Pollock | Recorder |
 | JC Reed | Team Lead |
+| Trung Nhat Nam Tran (Tony) | Quality Control |
 
 ## Team Coordination and Accountability
-Discuss, decide upon, and answer how you will:
+Team 201 is committed to remaining on target to reach project goals within the available window of time (Spring 2025 semester). To accomplish this, the following concerns will be resolved as follows:
 
-1. Ensure that assignments are submitted before deadlines and each team member has "signed off" on each submitted assignment?
-  * We will communicate with each other to ensure that we have not missed anything in the assignment and will meet in person if need be when we have to work on it as a group effort.
-2. Ensure that each team member has the knowledge and skill required for each assignment, and how you will adjust if not?
-  * We will work with what our individual strengths are and if one person is strugglilng with their part of the group, they should notify early on that they cannot do thier part and need help. Then we should lend a hand to help that person get some experience with that problem and help them solve it along the way.
-3. Ensure that feedback from your design review is distributed to and acted on by every member of the team?
-  * We will likely meetup if we receive feedback from the professor and together ask for clarification for what feedback we received in person or anytime that we are all available. If we're not all available we have the responsibility of emailing the professor about the feedback with one member and that member should contact the group with updates based on the feedback.
+1. How will the team ensure that assignments are submitted before deadlines and that each team member has "signed off" on each submitted assignment?
+  - We will communicate with each other to ensure that we have not missed anything in the assignment and will meet in person if need be when we have to work on it as a group effort.
+2. How will the team ensure that each team member has the knowledge and skill required for each assignment, and how will it adjust if not?
+  - We will work with what our individual strengths are and if one person is strugglilng with their part of the group, they should notify other team members as soon as reasonably possible that they are unable to accomplish their assigned tasks without assistance. Once notified, the remaining team members will assist the member in need. One goal with this assistance will be to seek to grow the struggling member's experience with that particular issue, enabling them to resolve future issues.
+3. How will the team ensure that feedback from your design review is distributed to and acted on by every member of the team?
+  - The team plans to review all feedback received from the design review withing the team text message thread, as well as in-person at the earliest convenience of all team members. The team intends to seek further clarification from class leadership (i.e. Professor Aukes). If a physical meeting is unachievable, each member will have the responsibility of emailing the professor about the feedback they received, and then forward all pertinent information to the team recorder for further dissemination.
