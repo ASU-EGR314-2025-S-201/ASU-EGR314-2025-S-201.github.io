@@ -487,83 +487,35 @@
 
 <p>Sequence Diagram Download: <a href="../static/Images/Team%20201%20-%20UML%20Sequence%20Diagram.svg">link</a></p>
 <h1 id="team-message-structure"><strong>Team Message Structure</strong></h1>
-<p><em>Table 1: Message Types</em></p>
+<p><em>Table 1: Message Types</em> </p>
 <table>
 <thead>
 <tr>
-<th>Message Type <br> byte 1-2 <br> (uint16_t)</th>
+<th>Message Type <br> byte 1-2 <br>(uint16_t)</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>0</td>
+<td>Status Code</td>
+</tr>
+<tr>
 <td>1</td>
-<td>Set actuator x param y</td>
+<td>Drive Mode</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Sensor data x</td>
+<td>Sensor Data</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Set stepper motor state param x</td>
-</tr>
-<tr>
-<td>4</td>
-<td>User input button x pushed</td>
-</tr>
-<tr>
-<td>5</td>
-<td>User accuracy x</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Subsystem z error code</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Subsystem z status code</td>
+<td>Path Selection</td>
 </tr>
 </tbody>
 </table>
-<p><em>Table 2: Message Type definitions</em></p>
-<p><strong>Message Type 1: set actuator x param y</strong></p>
-<table>
-<thead>
-<tr>
-<th>Byte 1-2 (uint16_t)</th>
-<th>Byte 3 (uint8_t)</th>
-<th>Byte 4-5 (uint16_t)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0x01 (uint16_t)</td>
-<td>X (uint8_t)</td>
-<td>Y (uint16_t)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Message Type 2: sensor data RGB</strong></p>
-<table>
-<thead>
-<tr>
-<th>Byte 1-2 (uint16_t)</th>
-<th>Byte 3 (uint8_t)</th>
-<th>Byte 4 (uint8_t)</th>
-<th>Byte 5 (uint8_t)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0x02 (uint16_t)</td>
-<td>R (uint8_t)</td>
-<td>G (uint8_t)</td>
-<td>B (uint8_t)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Message Type 3: set stepper motor state param x</strong></p>
+<hr />
+<p><em>Table 2: Status Message</em>  </p>
 <table>
 <thead>
 <tr>
@@ -573,86 +525,151 @@
 </thead>
 <tbody>
 <tr>
-<td>0x03 (uint16_t)</td>
-<td>X (uint8_t)</td>
+<td>0x00</td>
+<td>status</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Message Type 4: User input button x pushed</strong></p>
+<p>Status Message Key:  </p>
 <table>
 <thead>
 <tr>
-<th>Byte 1-2 (uint16_t)</th>
-<th>Byte 3 (uint8)</th>
+<th>Byte 3 (uint8_t)</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0x04 (uint16_t)</td>
-<td>X (uint8_t)</td>
+<td>0x00</td>
+<td>Offline</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>Online</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>Waiting</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>Error</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Message Type 5: User accuracy x</strong></p>
-<table>
-<thead>
-<tr>
-<th>Byte 1-2 (uint16_t)</th>
-<th>Byte 3 (uint8)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0x05 (uint16_t)</td>
-<td>X (uint8_t)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Message Type 6: subsystem z error code</strong></p>
+<hr />
+<p><em>Table 3: Drive Mode</em></p>
 <table>
 <thead>
 <tr>
 <th>Byte 1-2 (uint16_t)</th>
 <th>Byte 3 (uint8_t)</th>
-<th>Byte 4 (uint8_t)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0x06 (uint16_t)</td>
-<td>Z (uint8_t)</td>
-<td>X (uint8_t)</td>
+<td>0x01</td>
+<td>Mode</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Message Type 7: subsystem z status code</strong></p>
+<p>Drive Mode Key:  </p>
+<table>
+<thead>
+<tr>
+<th>Byte 3 (uint8_t)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x00</td>
+<td>Automatic</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>Direct Drive</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Table 4: Sensor Data</em></p>
 <table>
 <thead>
 <tr>
 <th>Byte 1-2 (uint16_t)</th>
 <th>Byte 3 (uint8_t)</th>
-<th>Byte 4 (uint8_t)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>0x07 (uint16_t)</td>
-<td>X (uint8_t)</td>
-<td>Y (uint8_t)</td>
+<td>0x02</td>
+<td>color</td>
 </tr>
 </tbody>
 </table>
-<p>Error Code Key:</p>
-<ul>
-<li>0: Subsystem is not receiving data</li>
-<li>1: Subsystem is unable to perform function</li>
-</ul>
-<p>Status Code Key:</p>
-<ul>
-<li>0: Subsystem is not active</li>
-<li>1: Subsystem is active</li>
-<li>2: Subsystem is performing priority task</li>
-</ul>
+<p>Sensor Data Key:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 3 (uint8_t)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x00</td>
+<td>Red</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>Green</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>Blue</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Table 5: Path Selection</em></p>
+<table>
+<thead>
+<tr>
+<th>Byte 1-2 (uint16_t)</th>
+<th>Byte 3 (uint8_t)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x03</td>
+<td>path</td>
+</tr>
+</tbody>
+</table>
+<p>Path Selection Key:</p>
+<table>
+<thead>
+<tr>
+<th>Byte 3 (uint8_t)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x00</td>
+<td>left</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>center</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>right</td>
+</tr>
+</tbody>
+</table>
 
 
 
