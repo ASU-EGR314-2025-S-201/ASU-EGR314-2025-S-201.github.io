@@ -11,69 +11,76 @@ title: Team Block Diagram, Process Diagram, and Message Structure
 Sequence Diagram Download: [link](static/Images/Team%20201%20-%20UML%20Sequence%20Diagram.svg)
 # **Team Message Structure**
 
-*Table 1: Message Types*
 
-| Message Type <br> byte 1-2 <br> (uint16_t) | Description                     |
-| ------------ | ------------------------------- |
-| 1            | Set actuator x param y          |
-| 2            | Sensor data x                   |
-| 3            | Set stepper motor state param x |
-| 4            | User input button x pushed      |
-| 5            | User accuracy x                 |
-| 6            | Subsystem z error code          |
-| 7            | Subsystem z status code         |
+*Table 1: Message Types* 
 
-*Table 2: Message Type definitions*
+|Message Type <br> byte 1-2 <br>(uint16_t) | Description|
+|-------------------|---------------|
+|0                  | Status Code   |
+|1                  | Drive Mode    |
+|2                  | Sensor Data   |
+|3                  | Path Selection|
 
-**Message Type 1: set actuator x param y**
+__________________________________________________________________________
 
-| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4-5 (uint16_t) |
-| ------------------- | ---------------- | ------------------- |
-| 0x01 (uint16_t)     | X (uint8_t)      | Y (uint16_t)        |
-
-**Message Type 2: sensor data RGB**
-
-| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4 (uint8_t) | Byte 5 (uint8_t) |
-| ------------------- | ---------------- | ---------------- | ---------------- |
-| 0x02 (uint16_t)     | R (uint8_t)      | G (uint8_t)      | B (uint8_t)      |
-
-**Message Type 3: set stepper motor state param x**
+*Table 2: Status Message*  
 
 | Byte 1-2 (uint16_t) | Byte 3 (uint8_t) |
-| ------------------- | ---------------- |
-| 0x03 (uint16_t)     | X (uint8_t)      |
+|---------------------|------------------|
+| 0x00                | status           |
 
-**Message Type 4: User input button x pushed**
+Status Message Key:  
 
-| Byte 1-2 (uint16_t) | Byte 3 (uint8) |
-| ------------------- | -------------- |
-| 0x04 (uint16_t)     | X (uint8_t)    |
+| Byte 3 (uint8_t) | Description |
+|------------------|-------------|
+| 0x00             | Offline     |
+| 0x01             | Online      |
+| 0x02             | Waiting     |
+| 0x03             | Error       |
 
-**Message Type 5: User accuracy x**
+__________________________________________________________________________
 
-| Byte 1-2 (uint16_t) | Byte 3 (uint8) |
-| ------------------- | -------------- |
-| 0x05 (uint16_t)     | X (uint8_t)    |
+*Table 3: Drive Mode*
 
-**Message Type 6: subsystem z error code**
+| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) |
+|---------------------|------------------|
+| 0x01                | Mode             |
 
-| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4 (uint8_t) |
-| ------------------- | ---------------- | ---------------- |
-| 0x06 (uint16_t)     | Z (uint8_t)      | X (uint8_t)      |
+Drive Mode Key:  
 
-**Message Type 7: subsystem z status code**
+| Byte 3 (uint8_t) | Description |
+|------------------|-------------|
+| 0x00             | Automatic   |
+| 0x01             | Direct Drive|
 
-| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) | Byte 4 (uint8_t) |
-| ------------------- | ---------------- | ---------------- |
-| 0x07 (uint16_t)     | X (uint8_t)      | Y (uint8_t)      |
+__________________________________________________________________________
 
-Error Code Key:
+*Table 4: Sensor Data*
 
-* 0: Subsystem is not receiving data
-* 1: Subsystem is unable to perform function
+| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) |
+|---------------------|------------------|
+| 0x02                | color            |
 
-Status Code Key:
+Sensor Data Key:
 
-* 0: Subsystem is not active
-* 1: Subsystem is active
-* 2: Subsystem is performing priority task
+| Byte 3 (uint8_t) | Description |
+|------------------|-------------|
+| 0x00             | Red         |
+| 0x01             | Green       |
+| 0x02             | Blue        |
+
+__________________________________________________________________________
+
+*Table 5: Path Selection*
+
+| Byte 1-2 (uint16_t) | Byte 3 (uint8_t) |
+|---------------------|------------------|
+| 0x03                | path             |
+
+Path Selection Key:
+
+| Byte 3 (uint8_t) | Description |
+|------------------|-------------|
+| 0x00             | left        |
+| 0x01             | center      |
+| 0x02             | right       |
