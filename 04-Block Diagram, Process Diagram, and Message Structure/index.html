@@ -570,7 +570,7 @@
 
   <h1>Team Block Diagram, Process Diagram, and Message Structure</h1>
 
-<p>The following diagrams outline the hardware and message structure for this project. </p>
+<p>The following diagrams outline the hardware and message structure for Team 201’s project. Team 201’s Block Diagram highlights the various components each team member is using within their individual subsystem as well as the general flow of communication. Following the block diagram is the team sequence diagram. Sequence diagrams are extremely useful in visualizing how messages interact between subsystems. The team discusses the many scenarios/use-cases within this diagram — further details on how each message is structured in their respective situation is the last section of this page. For a comprehensive evaluation of said structure, see Table 4: Message Verification. </p>
 <h2 id="team-block-diagram"><strong>Team Block Diagram</strong></h2>
 <p><a class="glightbox" href="../static/Images/Team-201_Team-Block-Diagram.drawio.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Team 201 Block Diagram" src="../static/Images/Team-201_Team-Block-Diagram.drawio.png" /></a></p>
 <h2 id="team-sequence-diagram"><strong>Team Sequence Diagram</strong></h2>
@@ -635,22 +635,77 @@
 </tr>
 </tbody>
 </table>
-<p><em>Table 3: Message Types and Data Structure</em>
-|Message Type (UINT8_t)| Message Data info (UINT8_t)|
-|---|---|
-|<strong>Type 0: Initialization</strong> <br><strong>Message Type ID:</strong> 0x00|<strong>Message Contents:</strong><br>0x00 <em>Enable all systems</em>|
-|<strong>Type 1: Drive Mode</strong> <br><strong>Message Type ID:</strong> 0x01|<strong>Message Contents:</strong><br>0x00 <em>Autonomous Function</em><br>0x01 <em>User-Controlled Function</em>|
-|<strong>Type 2: Sensor Data</strong> <br><strong>Message Type ID:</strong> 0x02|<strong>Message Contents:</strong><br>0x00 <em>Sensor detects Orange</em><br>0x01 <em>Sensor detects Blue</em><br>0x02 <em>Sensor detects Pink</em>|
-|<strong>Type 3: Path Selection</strong> <br><strong>Message Type ID:</strong> 0x03|<strong>Message Contents:</strong><br>0x00 <em>Orient motor Left</em><br>0x01 <em>Orient motor Right</em><br>0x02 <em>Orient motor Right</em>|</p>
+<p><em>Table 3: Message Types and Data Structure</em></p>
+<table>
+<thead>
+<tr>
+<th>Message Type (UINT8_t)</th>
+<th>Message Data info (UINT8_t)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Type 0: Initialization</strong> <br><strong>Message Type ID:</strong> 0x00</td>
+<td><strong>Message Contents:</strong><br>0x00 <em>Enable all systems</em></td>
+</tr>
+<tr>
+<td><strong>Type 1: Drive Mode</strong> <br><strong>Message Type ID:</strong> 0x01</td>
+<td><strong>Message Contents:</strong><br>0x00 <em>Autonomous Function</em><br>0x01 <em>User-Controlled Function</em></td>
+</tr>
+<tr>
+<td><strong>Type 2: Sensor Data</strong> <br><strong>Message Type ID:</strong> 0x02</td>
+<td><strong>Message Contents:</strong><br>0x00 <em>Sensor detects Orange</em><br>0x01 <em>Sensor detects Blue</em><br>0x02 <em>Sensor detects Pink</em></td>
+</tr>
+<tr>
+<td><strong>Type 3: Path Selection</strong> <br><strong>Message Type ID:</strong> 0x03</td>
+<td><strong>Message Contents:</strong><br>0x00 <em>Orient motor Left</em><br>0x01 <em>Orient motor Right</em><br>0x02 <em>Orient motor Right</em></td>
+</tr>
+</tbody>
+</table>
 <h2 id="message-verification-table"><strong>Message Verification Table</strong></h2>
 <p>The following table (see Table 4) can be used to visualize all message styles to be sent during device function, and how each team member handles various message types. The order in which team members are featured (from left to right) also mirrors the flow of data throughout the device, namely, messages sent from Eric to JC must first pass through Marcus' board, then Bradley's, before finally reaching JC. This functionality is a result of the project's daisy-chain layout.</p>
-<p><em>Table 4: Message Verification Table</em>
-|Message Type <br><em>(Message Type ID)</em>|JC <br>Role: HMI<br>ID:H|Eric <br>Role: Color Sensor<br>ID:S|Marcus<br>Role: MQTT Server (Web Service)<br>ID:M|Bradley<br>Role: Motor actuation<br>ID:M|
-|---|---|---|---|---|
-|Initialize Routine<br><em>(0x00)</em>|S<br>(Initialize Systems)|R<br>(Status Light Toggles)|R<br>(Status Light Toggles)|R<br>(Status Light Toggles)<br>(mqtt topic: /EGR314/TEAM201/SUB)|
-|Drive Mode Change<br><em>(0x01)</em>|S<br>(Alter Drive Mode to Autonomous or User-Controlled)|-|R<br>(mqtt topic: /EGR314/TEAM201/SUB)<br>S<br>(mqtt topic: /EGR314/TEAM201/PUB)|R<br>(Alter motor positioning algorith based on Drive mode sent)|
-|Sensor data<br><em>(0x02)</em>|R<br>(Display Element from detected category)|S<br>(Detected color is <em>)|R<br>(mqtt topic: /EGR314/TEAM201/SUB)<br>S<br>(mqtt topic: /EGR314/TEAM201/PUB)|R<br>(Alter motor position based on detected color)|
-|User path select<br><em>(0x03)</em>|S<br>(Selected path is </em>)|-|R<br>(mqtt topic: /EGR314/TEAM201/SUB)<br>S<br>(mqtt topic: /EGR314/TEAM201/PUB)|R<br>(Alter motor position based on selected path)|</p>
+<p><em>Table 4: Message Verification Table</em></p>
+<table>
+<thead>
+<tr>
+<th>Message Type <br><em>(Message Type ID)</em></th>
+<th>JC <br>Role: HMI<br>ID:H</th>
+<th>Eric <br>Role: Color Sensor<br>ID:S</th>
+<th>Marcus<br>Role: MQTT Server (Web Service)<br>ID:M</th>
+<th>Bradley<br>Role: Motor actuation<br>ID:M</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Initialize Routine<br><em>(0x00)</em></td>
+<td>S<br>(Initialize Systems)</td>
+<td>R<br>(Status Light Toggles)</td>
+<td>R<br>(Status Light Toggles)</td>
+<td>R<br>(Status Light Toggles)<br>(mqtt topic: /EGR314/TEAM201/SUB)</td>
+</tr>
+<tr>
+<td>Drive Mode Change<br><em>(0x01)</em></td>
+<td>S<br>(Alter Drive Mode to Autonomous or User-Controlled)</td>
+<td>-</td>
+<td>R<br>(mqtt topic: /EGR314/TEAM201/SUB)<br>S<br>(mqtt topic: /EGR314/TEAM201/PUB)</td>
+<td>R<br>(Alter motor positioning algorith based on Drive mode sent)</td>
+</tr>
+<tr>
+<td>Sensor data<br><em>(0x02)</em></td>
+<td>R<br>(Display Element from detected category)</td>
+<td>S<br>(Detected color is _)</td>
+<td>R<br>(mqtt topic: /EGR314/TEAM201/SUB)<br>S<br>(mqtt topic: /EGR314/TEAM201/PUB)</td>
+<td>R<br>(Alter motor position based on detected color)</td>
+</tr>
+<tr>
+<td>User path select<br><em>(0x03)</em></td>
+<td>S<br>(Selected path is _)</td>
+<td>-</td>
+<td>R<br>(mqtt topic: /EGR314/TEAM201/SUB)<br>S<br>(mqtt topic: /EGR314/TEAM201/PUB)</td>
+<td>R<br>(Alter motor position based on selected path)</td>
+</tr>
+</tbody>
+</table>
 
 
 
