@@ -2,7 +2,7 @@
 title: Team Block Diagram, Process Diagram, and Message Structure
 ---
 
-The following diagrams outline the hardware and message structure for this project. 
+The following diagrams outline the hardware and message structure for Team 201’s project. Team 201’s Block Diagram highlights the various components each team member is using within their individual subsystem as well as the general flow of communication. Following the block diagram is the team sequence diagram. Sequence diagrams are extremely useful in visualizing how messages interact between subsystems. The team discusses the many scenarios/use-cases within this diagram — further details on how each message is structured in their respective situation is the last section of this page. For a comprehensive evaluation of said structure, see Table 4: Message Verification. 
 
 ## **Team Block Diagram**
 ![Team 201 Block Diagram](static/Images/Team-201_Team-Block-Diagram.drawio.png)
@@ -35,7 +35,8 @@ The message prefix AZ and suffix YB function as a message start/stop indicator, 
 |Broadcast <br>(sends to all members)|X|
 
 *Table 3: Message Types and Data Structure*
-|Message Type (UINT8_t)| Message Data info (UINT8_t)|
+
+| Message Type (UINT8_t) | Message Data info (UINT8_t) |
 |---|---|
 |**Type 0: Initialization** <br>**Message Type ID:** 0x00|**Message Contents:**<br>0x00 *Enable all systems*|
 |**Type 1: Drive Mode** <br>**Message Type ID:** 0x01|**Message Contents:**<br>0x00 *Autonomous Function*<br>0x01 *User-Controlled Function*|
@@ -46,6 +47,7 @@ The message prefix AZ and suffix YB function as a message start/stop indicator, 
 The following table (see Table 4) can be used to visualize all message styles to be sent during device function, and how each team member handles various message types. The order in which team members are featured (from left to right) also mirrors the flow of data throughout the device, namely, messages sent from Eric to JC must first pass through Marcus' board, then Bradley's, before finally reaching JC. This functionality is a result of the project's daisy-chain layout.
 
 *Table 4: Message Verification Table*
+
 |Message Type <br>*(Message Type ID)*|JC <br>Role: HMI<br>ID:H|Eric <br>Role: Color Sensor<br>ID:S|Marcus<br>Role: MQTT Server (Web Service)<br>ID:M|Bradley<br>Role: Motor actuation<br>ID:M|
 |---|---|---|---|---|
 |Initialize Routine<br>*(0x00)*|S<br>(Initialize Systems)|R<br>(Status Light Toggles)|R<br>(Status Light Toggles)|R<br>(Status Light Toggles)<br>(mqtt topic: /EGR314/TEAM201/SUB)|
