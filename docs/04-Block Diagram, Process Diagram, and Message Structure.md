@@ -10,8 +10,7 @@ The following diagrams outline the hardware and message structure for this proje
 # **Team Sequence Diagram**
 ![UML Diagram](static/Images/Team-201_UML_Diagram.drawio.png)
 
-Sequence Diagram SVG Download: [link](docs/static/Images/Team-201_UML_Diagram.drawio.svg)
-# **Team Message Structure**
+Sequence Diagram SVG Download: [link](static/Images/Team-201_UML_Diagram.drawio.svg)
 
 
 # **Team Message Format**
@@ -21,9 +20,9 @@ UART messages are sent from team member to team member in an 8-byte format. Each
 
 |**Byte Number**|0-1|2|3|4|5|6-7|
 |---|---|---|---|---|---|---|
-|**Byte Description**| AZ | Sender ID |Receiver ID|Message Type|Message Data|YB|
+|**Byte Contents**| AZ | Sender ID |Receiver ID|Message Type|Message Data|YB|
 
-The message prefix AZ and suffix YB function as a message start/stop indicator, allowing team members to efficiently filter out extraneous noise on UART lines as well as anticipate a prescribed message format. Sender and Reciever IDs (see table 2) are used to identify to which team member a message is intended, as well as provide a marker of who sent the message. This is advantageous given the daisy-chain layout of Team 201's project, as messages will be sent from member to member until they are terminated by their recipient or their sender, depending on message type. Message Types and data are discussed in depth in the *Message Types and Data* section below.
+The message prefix AZ and suffix YB function as a message start/stop indicator, allowing team members to efficiently filter out extraneous noise on UART lines as well as anticipate a prescribed message format. Sender and Reciever IDs (see table 2) are used to identify to which team member a message is intended, as well as provide a marker of who sent the message. This is advantageous given the daisy-chain layout of Team 201's project, as messages will be sent from member to member until they are terminated by their recipient or their sender, depending on message type (see Table 3 for Message Type IDs and their respective data).
 
 *Table 2: Team IDs*
 
@@ -35,9 +34,9 @@ The message prefix AZ and suffix YB function as a message start/stop indicator, 
 |Bradley <br>(Actuator)|A|
 |Broadcast <br>(sends to all members)|X|
 
-Table 3
+*Table 3: Message Types and Data Structure*
+|Message Type (Type ID - UINT8_T)
 
-## Message Types and Data
 *Table 1: Message Types* 
 
 |Message Type <br> byte 1 <br>(uint8_t) | Description|
