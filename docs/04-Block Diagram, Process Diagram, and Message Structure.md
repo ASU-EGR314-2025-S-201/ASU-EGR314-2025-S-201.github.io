@@ -4,16 +4,16 @@ title: Team Block Diagram, Process Diagram, and Message Structure
 
 The following diagrams outline the hardware and message structure for this project. 
 
-# **Team Block Diagram**
+## **Team Block Diagram**
 ![Team 201 Block Diagram](static/Images/Team-201_Team-Block-Diagram.drawio.png)
 
-# **Team Sequence Diagram**
+## **Team Sequence Diagram**
 ![UML Diagram](static/Images/Team-201_UML_Diagram.drawio.png)
 
 Sequence Diagram SVG Download: [link](static/Images/Team-201_UML_Diagram.drawio.svg)
 
 
-# **Team Message Format**
+## **Team Message Format**
 UART messages are sent from team member to team member in an 8-byte format. Each byte has a specifix role, outlined in Table 1 below. 
 
 *Table 1: Message Byte Structure*
@@ -42,74 +42,13 @@ The message prefix AZ and suffix YB function as a message start/stop indicator, 
 |**Type 2: Sensor Data** <br>**Message Type ID:** 0x02|**Message Contents:**<br>0x00 *Sensor detects Orange*<br>0x01 *Sensor detects Blue*<br>0x02 *Sensor detects Pink*|
 |**Type 3: Path Selection** <br>**Message Type ID:** 0x03|**Message Contents:**<br>0x00 *Orient motor Left*<br>0x01 *Orient motor Right*<br>0x02 *Orient motor Right*|
 
+## **Message Verification Table**
+The following table (see Table 4) can be used to visualize all message styles to be sent during device function, and how each team member handles various message types. The order in which team members are featured (from left to right) also mirrors the flow of data throughout the device, namely, messages sent from Eric to JC must first pass through Marcus' board, then Bradley's, before finally reaching JC. This functionality is a result of the project's daisy-chain layout.
 
-*Table 1: Message Types* 
-
-|Message Type <br> byte 1 <br>(uint8_t) | Description|
-|-------------------|---------------|
-|0                  | Initialization Message   |
-|1                  | Drive Mode    |
-|2                  | Sensor Data   |
-|3                  | Path Selection|
-
-__________________________________________________________________________
-
-*Table 2: Status Message*  
-
-| Byte 1 (uint8_t) | Byte 2 (uint8_t) |
-|---------------------|------------------|
-| 0x00                | Initialize all systems            |
-
-Initialization Message Key:  
-
-| Byte 2 (uint8_t) | Description |
-|------------------|-------------|
-| 0x00             | Initialize     |
-
-
-__________________________________________________________________________
-
-*Table 3: Drive Mode*
-
-| Byte 1 (uint8_t) | Byte 2 (uint8_t) |
-|---------------------|------------------|
-| 0x01                | Mode             |
-
-Drive Mode Key:  
-
-| Byte 2 (uint8_t) | Description |
-|------------------|-------------|
-| 0x00             | Automatic   |
-| 0x01             | Direct Drive|
-
-__________________________________________________________________________
-
-*Table 4: Sensor Data*
-
-| Byte 1 (uint8_t) | Byte 2 (uint8_t) |
-|---------------------|------------------|
-| 0x02                | color            |
-
-Sensor Data Key:
-
-| Byte 2 (uint8_t) | Description |
-|------------------|-------------|
-| 0x00             | Orange         |
-| 0x01             | Blue       |
-| 0x02             | Pink        |
-
-__________________________________________________________________________
-
-*Table 5: Path Selection*
-
-| Byte 1 (uint8_t) | Byte 2 (uint8_t) |
-|---------------------|------------------|
-| 0x03                | path             |
-
-Path Selection Key:
-
-| Byte 2 (uint8_t) | Description |
-|------------------|-------------|
-| 0x00             | left        |
-| 0x01             | center      |
-| 0x02             | right       |
+*Table 4: Message Verification Table*
+|Message Type <br>*(Message Type ID)*|JC <br>Role: HMI<br>ID:H|Eric <br>Role: Color Sensor<br>ID:S|Marcus<br>Role: MQTT Server (Web Service)<br>ID:M|Bradley<br>Role: Motor actuation<br>ID:M|
+|---|---|---|---|---|
+|Initialize Routine<br>*(0x00)*|S<br>(Initialize Systems)|R<br>(Status Light Toggles)|R<br>(Status Light Toggles)|R<br>(Status Light Toggles)<br>(mqtt topic: /EGR314/TEAM201/SUB)|
+|Drive Mode Change<br>*(0x01)*|S<br>(Alter Drive Mode to Autonomous or User-Controlled)|-|R<br>(mqtt topic: /EGR314/TEAM201/SUB)<br>S<br>(mqtt topic: /EGR314/TEAM201/PUB)|R<br>(Alter motor positioning algorith based on Drive mode sent)|
+|Sensor data<br>*(0x02)*|R<br>(Display Element from detected category)|S<br>(Detected color is _)|R<br>(mqtt topic: /EGR314/TEAM201/SUB)<br>S<br>(mqtt topic: /EGR314/TEAM201/PUB)|R<br>(Alter motor position based on detected color)|
+|User path select<br>*(0x03)*|S<br>(Selected path is _)|-|R<br>(mqtt topic: /EGR314/TEAM201/SUB)<br>S<br>(mqtt topic: /EGR314/TEAM201/PUB)|R<br>(Alter motor position based on selected path)|
