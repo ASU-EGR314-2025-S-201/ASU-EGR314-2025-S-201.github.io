@@ -403,8 +403,17 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Team Block Diagram, Process Diagram, and Message Structure
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -415,6 +424,51 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#team-block-diagram" class="md-nav__link">
+    Team Block Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-sequence-diagram" class="md-nav__link">
+    Team Sequence Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-message-format" class="md-nav__link">
+    Team Message Format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-verification-table" class="md-nav__link">
+    Message Verification Table
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -456,8 +510,42 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#team-block-diagram" class="md-nav__link">
+    Team Block Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-sequence-diagram" class="md-nav__link">
+    Team Sequence Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-message-format" class="md-nav__link">
+    Team Message Format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-verification-table" class="md-nav__link">
+    Message Verification Table
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -480,13 +568,15 @@
   
 
 
+  <h1>Team Block Diagram, Process Diagram, and Message Structure</h1>
+
 <p>The following diagrams outline the hardware and message structure for this project. </p>
-<h1 id="team-block-diagram"><strong>Team Block Diagram</strong></h1>
+<h2 id="team-block-diagram"><strong>Team Block Diagram</strong></h2>
 <p><a class="glightbox" href="../static/Images/Team-201_Team-Block-Diagram.drawio.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Team 201 Block Diagram" src="../static/Images/Team-201_Team-Block-Diagram.drawio.png" /></a></p>
-<h1 id="team-sequence-diagram"><strong>Team Sequence Diagram</strong></h1>
+<h2 id="team-sequence-diagram"><strong>Team Sequence Diagram</strong></h2>
 <p><a class="glightbox" href="../static/Images/Team-201_UML_Diagram.drawio.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="UML Diagram" src="../static/Images/Team-201_UML_Diagram.drawio.png" /></a></p>
 <p>Sequence Diagram SVG Download: <a href="../static/Images/Team-201_UML_Diagram.drawio.svg">link</a></p>
-<h1 id="team-message-format"><strong>Team Message Format</strong></h1>
+<h2 id="team-message-format"><strong>Team Message Format</strong></h2>
 <p>UART messages are sent from team member to team member in an 8-byte format. Each byte has a specifix role, outlined in Table 1 below. </p>
 <p><em>Table 1: Message Byte Structure</em></p>
 <table>
@@ -552,177 +642,15 @@
 |<strong>Type 1: Drive Mode</strong> <br><strong>Message Type ID:</strong> 0x01|<strong>Message Contents:</strong><br>0x00 <em>Autonomous Function</em><br>0x01 <em>User-Controlled Function</em>|
 |<strong>Type 2: Sensor Data</strong> <br><strong>Message Type ID:</strong> 0x02|<strong>Message Contents:</strong><br>0x00 <em>Sensor detects Orange</em><br>0x01 <em>Sensor detects Blue</em><br>0x02 <em>Sensor detects Pink</em>|
 |<strong>Type 3: Path Selection</strong> <br><strong>Message Type ID:</strong> 0x03|<strong>Message Contents:</strong><br>0x00 <em>Orient motor Left</em><br>0x01 <em>Orient motor Right</em><br>0x02 <em>Orient motor Right</em>|</p>
-<p><em>Table 1: Message Types</em> </p>
-<table>
-<thead>
-<tr>
-<th>Message Type <br> byte 1 <br>(uint8_t)</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>Initialization Message</td>
-</tr>
-<tr>
-<td>1</td>
-<td>Drive Mode</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Sensor Data</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Path Selection</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><em>Table 2: Status Message</em>  </p>
-<table>
-<thead>
-<tr>
-<th>Byte 1 (uint8_t)</th>
-<th>Byte 2 (uint8_t)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0x00</td>
-<td>Initialize all systems</td>
-</tr>
-</tbody>
-</table>
-<p>Initialization Message Key:  </p>
-<table>
-<thead>
-<tr>
-<th>Byte 2 (uint8_t)</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0x00</td>
-<td>Initialize</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><em>Table 3: Drive Mode</em></p>
-<table>
-<thead>
-<tr>
-<th>Byte 1 (uint8_t)</th>
-<th>Byte 2 (uint8_t)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0x01</td>
-<td>Mode</td>
-</tr>
-</tbody>
-</table>
-<p>Drive Mode Key:  </p>
-<table>
-<thead>
-<tr>
-<th>Byte 2 (uint8_t)</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0x00</td>
-<td>Automatic</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Direct Drive</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><em>Table 4: Sensor Data</em></p>
-<table>
-<thead>
-<tr>
-<th>Byte 1 (uint8_t)</th>
-<th>Byte 2 (uint8_t)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0x02</td>
-<td>color</td>
-</tr>
-</tbody>
-</table>
-<p>Sensor Data Key:</p>
-<table>
-<thead>
-<tr>
-<th>Byte 2 (uint8_t)</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0x00</td>
-<td>Orange</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Blue</td>
-</tr>
-<tr>
-<td>0x02</td>
-<td>Pink</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><em>Table 5: Path Selection</em></p>
-<table>
-<thead>
-<tr>
-<th>Byte 1 (uint8_t)</th>
-<th>Byte 2 (uint8_t)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0x03</td>
-<td>path</td>
-</tr>
-</tbody>
-</table>
-<p>Path Selection Key:</p>
-<table>
-<thead>
-<tr>
-<th>Byte 2 (uint8_t)</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0x00</td>
-<td>left</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>center</td>
-</tr>
-<tr>
-<td>0x02</td>
-<td>right</td>
-</tr>
-</tbody>
-</table>
+<h2 id="message-verification-table"><strong>Message Verification Table</strong></h2>
+<p>The following table (see Table 4) can be used to visualize all message styles to be sent during device function, and how each team member handles various message types. The order in which team members are featured (from left to right) also mirrors the flow of data throughout the device, namely, messages sent from Eric to JC must first pass through Marcus' board, then Bradley's, before finally reaching JC. This functionality is a result of the project's daisy-chain layout.</p>
+<p><em>Table 4: Message Verification Table</em>
+|Message Type <br><em>(Message Type ID)</em>|JC <br>Role: HMI<br>ID:H|Eric <br>Role: Color Sensor<br>ID:S|Marcus<br>Role: MQTT Server (Web Service)<br>ID:M|Bradley<br>Role: Motor actuation<br>ID:M|
+|---|---|---|---|---|
+|Initialize Routine<br><em>(0x00)</em>|S<br>(Initialize Systems)|R<br>(Status Light Toggles)|R<br>(Status Light Toggles)|R<br>(Status Light Toggles)<br>(mqtt topic: /EGR314/TEAM201/SUB)|
+|Drive Mode Change<br><em>(0x01)</em>|S<br>(Alter Drive Mode to Autonomous or User-Controlled)|-|R<br>(mqtt topic: /EGR314/TEAM201/SUB)<br>S<br>(mqtt topic: /EGR314/TEAM201/PUB)|R<br>(Alter motor positioning algorith based on Drive mode sent)|
+|Sensor data<br><em>(0x02)</em>|R<br>(Display Element from detected category)|S<br>(Detected color is <em>)|R<br>(mqtt topic: /EGR314/TEAM201/SUB)<br>S<br>(mqtt topic: /EGR314/TEAM201/PUB)|R<br>(Alter motor position based on detected color)|
+|User path select<br><em>(0x03)</em>|S<br>(Selected path is </em>)|-|R<br>(mqtt topic: /EGR314/TEAM201/SUB)<br>S<br>(mqtt topic: /EGR314/TEAM201/PUB)|R<br>(Alter motor position based on selected path)|</p>
 
 
 
