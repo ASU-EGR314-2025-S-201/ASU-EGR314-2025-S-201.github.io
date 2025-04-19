@@ -40,7 +40,7 @@ The message prefix AZ and suffix YB function as a message start/stop indicator, 
 |**Type 0: Initialization** <br>**Message Type ID:** 0x00|**Message Contents:**<br>0x00 *Enable all systems*|
 |**Type 1: Drive Mode** <br>**Message Type ID:** 0x01|**Message Contents:**<br>0x00 *Autonomous Function*<br>0x01 *User-Controlled Function*|
 |**Type 2: Sensor Data** <br>**Message Type ID:** 0x02|**Message Contents:**<br>0x00 *Sensor detects Orange*<br>0x01 *Sensor detects Blue*<br>0x02 *Sensor detects Pink*|
-|**Type 3: Path Selection** <br>**Message Type ID:** 0x03|**Message Contents:**<br>0x00 *Enable all systems*|
+|**Type 3: Path Selection** <br>**Message Type ID:** 0x03|**Message Contents:**<br>0x00 *Orient motor Left*<br>0x01 *Orient motor Right*<br>0x02 *Orient motor Right*|
 
 
 *Table 1: Message Types* 
