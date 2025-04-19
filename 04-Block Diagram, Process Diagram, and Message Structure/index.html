@@ -546,7 +546,12 @@
 </tbody>
 </table>
 <p><em>Table 3: Message Types and Data Structure</em>
-|Message Type (Type ID - UINT8_T)</p>
+|Message Type (UINT8_t)| Message Data info (UINT8_t)|
+|---|---|
+|<strong>Type 0: Initialization</strong> <br><strong>Message Type ID:</strong> 0x00|<strong>Message Contents:</strong><br>0x00 <em>Enable all systems</em>|
+|<strong>Type 1: Drive Mode</strong> <br><strong>Message Type ID:</strong> 0x01|<strong>Message Contents:</strong><br>0x00 <em>Autonomous Function</em><br>0x01 <em>User-Controlled Function</em>|
+|<strong>Type 2: Sensor Data</strong> <br><strong>Message Type ID:</strong> 0x02|<strong>Message Contents:</strong><br>0x00 <em>Sensor detects Orange</em><br>0x01 <em>Sensor detects Blue</em><br>0x02 <em>Sensor detects Pink</em>|
+|<strong>Type 3: Path Selection</strong> <br><strong>Message Type ID:</strong> 0x03|<strong>Message Contents:</strong><br>0x00 <em>Enable all systems</em>|</p>
 <p><em>Table 1: Message Types</em> </p>
 <table>
 <thead>
