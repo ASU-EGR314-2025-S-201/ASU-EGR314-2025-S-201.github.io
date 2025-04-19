@@ -487,18 +487,79 @@
 <p><a class="glightbox" href="../static/Images/Team-201_UML_Diagram.drawio.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="UML Diagram" src="../static/Images/Team-201_UML_Diagram.drawio.png" /></a></p>
 <p>Sequence Diagram SVG Download: <a href="docs/static/Images/Team-201_UML_Diagram.drawio.svg">link</a></p>
 <h1 id="team-message-structure"><strong>Team Message Structure</strong></h1>
+<h1 id="team-message-format"><strong>Team Message Format</strong></h1>
+<p>UART messages are sent from team member to team member in an 8-byte format. Each byte has a specifix role, outlined in Table 1 below. </p>
+<p><em>Table 1: Message Byte Structure</em></p>
+<table>
+<thead>
+<tr>
+<th><strong>Byte Number</strong></th>
+<th>0-1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6-7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Byte Description</strong></td>
+<td>AZ</td>
+<td>Sender ID</td>
+<td>Receiver ID</td>
+<td>Message Type</td>
+<td>Message Data</td>
+<td>YB</td>
+</tr>
+</tbody>
+</table>
+<p>The message prefix AZ and suffix YB function as a message start/stop indicator, allowing team members to efficiently filter out extraneous noise on UART lines as well as anticipate a prescribed message format. Sender and Reciever IDs (see table 2) are used to identify to which team member a message is intended, as well as provide a marker of who sent the message. This is advantageous given the daisy-chain layout of Team 201's project, as messages will be sent from member to member until they are terminated by their recipient or their sender, depending on message type. Message Types and data are discussed in depth in the <em>Message Types and Data</em> section below.</p>
+<p><em>Table 2: Team IDs</em></p>
+<table>
+<thead>
+<tr>
+<th>Team member (Role)</th>
+<th>Team ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JC <br>(HMI)</td>
+<td>H</td>
+</tr>
+<tr>
+<td>Eric <br>(Sensor)</td>
+<td>S</td>
+</tr>
+<tr>
+<td>Marcus <br>(MQTT Server)</td>
+<td>M</td>
+</tr>
+<tr>
+<td>Bradley <br>(Actuator)</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Broadcast <br>(sends to all members)</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+<p>Table 3</p>
+<h2 id="message-types-and-data">Message Types and Data</h2>
 <p><em>Table 1: Message Types</em> </p>
 <table>
 <thead>
 <tr>
-<th>Message Type <br> byte 1-2 <br>(uint16_t)</th>
+<th>Message Type <br> byte 1 <br>(uint8_t)</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>0</td>
-<td>Status Code</td>
+<td>Initialization Message</td>
 </tr>
 <tr>
 <td>1</td>
@@ -519,41 +580,29 @@
 <table>
 <thead>
 <tr>
-<th>Byte 1-2 (uint16_t)</th>
-<th>Byte 3 (uint8_t)</th>
+<th>Byte 1 (uint8_t)</th>
+<th>Byte 2 (uint8_t)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>0x00</td>
-<td>status</td>
+<td>Initialize all systems</td>
 </tr>
 </tbody>
 </table>
-<p>Status Message Key:  </p>
+<p>Initialization Message Key:  </p>
 <table>
 <thead>
 <tr>
-<th>Byte 3 (uint8_t)</th>
+<th>Byte 2 (uint8_t)</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>0x00</td>
-<td>Offline</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Online</td>
-</tr>
-<tr>
-<td>0x02</td>
-<td>Waiting</td>
-</tr>
-<tr>
-<td>0x03</td>
-<td>Error</td>
+<td>Initialize</td>
 </tr>
 </tbody>
 </table>
@@ -562,8 +611,8 @@
 <table>
 <thead>
 <tr>
-<th>Byte 1-2 (uint16_t)</th>
-<th>Byte 3 (uint8_t)</th>
+<th>Byte 1 (uint8_t)</th>
+<th>Byte 2 (uint8_t)</th>
 </tr>
 </thead>
 <tbody>
@@ -577,7 +626,7 @@
 <table>
 <thead>
 <tr>
-<th>Byte 3 (uint8_t)</th>
+<th>Byte 2 (uint8_t)</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -597,8 +646,8 @@
 <table>
 <thead>
 <tr>
-<th>Byte 1-2 (uint16_t)</th>
-<th>Byte 3 (uint8_t)</th>
+<th>Byte 1 (uint8_t)</th>
+<th>Byte 2 (uint8_t)</th>
 </tr>
 </thead>
 <tbody>
@@ -612,7 +661,7 @@
 <table>
 <thead>
 <tr>
-<th>Byte 3 (uint8_t)</th>
+<th>Byte 2 (uint8_t)</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -636,8 +685,8 @@
 <table>
 <thead>
 <tr>
-<th>Byte 1-2 (uint16_t)</th>
-<th>Byte 3 (uint8_t)</th>
+<th>Byte 1 (uint8_t)</th>
+<th>Byte 2 (uint8_t)</th>
 </tr>
 </thead>
 <tbody>
@@ -651,7 +700,7 @@
 <table>
 <thead>
 <tr>
-<th>Byte 3 (uint8_t)</th>
+<th>Byte 2 (uint8_t)</th>
 <th>Description</th>
 </tr>
 </thead>
