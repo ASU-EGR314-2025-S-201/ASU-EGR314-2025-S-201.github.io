@@ -3,7 +3,10 @@ title: Team Organization
 ---
 
 ## **Mission Statement**
-As this team values the needs of middle school students, we strive to increase their interest in STEM through an interactive display. In addition to inspiring youth, the display will also meet professional engineering standards.
+>As this team values the needs of middle school students, we strive to increase their interest in STEM through an interactive display. In addition to inspiring youth, the display will also meet professional engineering standards.
+
+## **Team Charter**
+>Museum-goers, especially middle school students, need exhibits that are interactive, easy to use, and safe. Team 201 worked together over the course of the semester to create an element sorter, which prompts students to test their knowledge of basic element types (metals, nonmetals, and metalloids) in a color-based sorting game.
 
 ## **Team Goals**
 1. Foster open communication within the team to encourage new ideas and provide feedback for one another.

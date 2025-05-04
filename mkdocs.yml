@@ -13,7 +13,7 @@ theme:
     primary: custom
     accent: indigo
   font:
-    text: Roboto
+    text: Albert Sans SemiBold
   logo: static/logo.svg
   favicon: static/logo.png
 
@@ -69,3 +69,12 @@ extra:
     - icon: fontawesome/regular/file-code
       link: /2025_fall
       name: 2025 Site    
+
+nav:
+ - Homepage: 'index.md'
+ - Team Organization: 02-TeamOrganization.md
+ - Ideation and Concept Generation: 03-IdeationAndConceptGeneration.md
+ - Block Diagram, Process Diagram, and Message Structure: 04-Block Diagram, Process Diagram, and Message Structure.nd
+ - Innovation Showcase Poster: 05-Poster.md
+ - Reflection: 06-Reflection.md
+ - Resources: 07-Resources.md

@@ -5,12 +5,12 @@ title: Team Block Diagram, Process Diagram, and Message Structure
 The following diagrams outline the hardware and message structure for Team 201’s project. Team 201’s Block Diagram highlights the various components each team member is using within their individual subsystem as well as the general flow of communication. Following the block diagram is the team sequence diagram. Sequence diagrams are extremely useful in visualizing how messages interact between subsystems. The team discusses the many scenarios/use-cases within this diagram — further details on how each message is structured in their respective situation is the last section of this page. For a comprehensive evaluation of said structure, see Table 4: Message Verification. 
 
 ## **Team Block Diagram**
-![Team 201 Block Diagram](static/Images/Team-201_Team-Block-Diagram.drawio.png)
+![Team 201 Block Diagram](static/Images/Team_201_Block_Diagram.drawio.png)
 
 ## **Team Sequence Diagram**
-![UML Diagram](static/Images/Team-201_UML_Diagram.drawio.png)
+![UML Diagram](static/Images/Team 201 - UML Sequence Diagram.drawio.png)
 
-Sequence Diagram SVG Download: [link](static/Images/Team-201_UML_Diagram.drawio.svg)
+Sequence Diagram SVG Download: [link](static/Images/Team 201 - UML Sequence Diagram.drawio.svg)
 
 
 ## **Team Message Format**
