@@ -29,7 +29,10 @@ EGR 314 challenges teams to create an interactive S.T.E.M. exhibit to teach K-12
 |------------|------|
 | Team Organization | [link](https://asu-egr314-2025-s-201.github.io/02-TeamOrganization/){:target="_blank"}|
 | Ideation and Concept Generation | [link](https://asu-egr314-2025-s-201.github.io/03-IdeationAndConceptGeneration/){:target="_blank"}|
-| Block Diagram, Process Diagram, and Message Structure | [link](https://asu-egr314-2025-s-201.github.io/04-Block%20Diagram%2C%20Process%20Diagram%2C%20and%20Message%20Structure/){:target="_blank"} | 
+| Block Diagram, Process Diagram, and Message Structure | [link](https://asu-egr314-2025-s-201.github.io/04-Block%20Diagram%2C%20Process%20Diagram%2C%20and%20Message%20Structure/){:target="_blank"} |
+| Innovation Showcase Poster | [link](https://asu-egr314-2025-s-201.github.io/05-Poster/) | 
+| Reflection | [link](https://asu-egr314-2025-s-201.github.io/06-Reflection/) |
+| Resources | [link](https://asu-egr314-2025-s-201.github.io/07-Resources/) |
 
 ***Feedback?*** - We appreciate any feedback on our project or site! The team recorder is available at *bradpollock123@gmail.com*.
 
