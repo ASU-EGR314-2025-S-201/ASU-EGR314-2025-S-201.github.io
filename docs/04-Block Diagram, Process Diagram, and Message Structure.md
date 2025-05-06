@@ -53,7 +53,7 @@ The message prefix AZ and suffix YB function as a message start/stop indicator, 
 |**Type 2: Sensor Data** <br>**Message Type ID:** 0x02|**Message Contents:**<br>0x00 *Sensor detects Orange*<br>0x01 *Sensor detects Blue*<br>0x02 *Sensor detects Pink*|
 |**Type 3: Path Selection** <br>**Message Type ID:** 0x03|**Message Contents:**<br>0x00 *Orient motor Left*<br>0x01 *Orient motor Right*<br>0x02 *Orient motor Right*|
 
-## **Message Verification Table**
+### **Message Verification Table**
 The following table (see Table 4) can be used to visualize all message styles to be sent during device function, and how each team member handles various message types. The order in which team members are featured (from left to right) also mirrors the flow of data throughout the device, namely, messages sent from Eric to JC must first pass through Marcus' board, then Bradley's, before finally reaching JC. This functionality is a result of the project's daisy-chain layout.
 
 *Table 4: Message Verification Table*

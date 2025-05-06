@@ -23,7 +23,6 @@ title: Team Organization
 | Marcus Perez | Text | Discord | Call |
 | Bradley Pollock | Text | Discord | Call |
 | JC Reed | Text | Discord | Call |
-| Trung Nhat Nam Tran (Tony) | Text | Discord | Call |
 
 _Our team will prioritize communication via text-messaging and discord calls, leaving phone calls as an emergency communication channel. Instructor correspondence will be done as a whole team's responsibility, ensuring the feedback is communicated across the entire group._
 
@@ -45,7 +44,6 @@ We will use text messages to remind the group of the meeting the day prior. If m
 | Marcus Perez | Progress Monitor |
 | Bradley Pollock | Recorder |
 | JC Reed | Team Lead |
-| Trung Nhat Nam Tran (Tony) | Quality Control |
 
 ## Team Coordination and Accountability
 Team 201 is committed to remaining on target to reach project goals within the available window of time (Spring 2025 semester). To accomplish this, the following concerns will be resolved as follows:
